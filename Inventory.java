@@ -25,4 +25,14 @@ class Inventory {
   {
     
   }
+
+  public void showAll()
+  {
+    
+  }
+
+  public void quit()
+  {
+    
+  }
 }
