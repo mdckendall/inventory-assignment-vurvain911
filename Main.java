@@ -1,5 +1,33 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+class Inventory {
+
+  String name;
+  String serialNum;
+  int value;
+
+  public Inventory(String itemName, String serialNumber, int itemValue) {
+    this.name = itemName;
+    this.serialNum = serialNumber;
+    this.value = itemValue;
+  }
+
+  public String getName()
+  {
+    return name;
+  }
+
+  public String getSerialNum()
+  {
+    return serialNum;
+  }
+
+  public Integer getValue()
+  {
+    return value;
+  }
+}
+
 class Main {
   public static void main(String[] args) {
     ArrayList<Inventory> Storage = new ArrayList<Inventory>();
@@ -78,6 +106,5 @@ class Main {
         break;
       }
     } while (true);
-    input.close();
   }
 }
