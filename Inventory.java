@@ -10,23 +10,18 @@ class Inventory {
     this.value = itemValue;
   }
 
-  public void addItem(String serialNum) {
-
+  public String getName()
+  {
+    return name;
   }
 
-  public void deleteItem(String serialNum) {
-
+  public String getSerialNum()
+  {
+    return serialNum;
   }
 
-  public void updateItem(String serialNum) {
-
-  }
-
-  public void showAll() {
-
-  }
-
-  public void quit() {
-
+  public Integer getValue()
+  {
+    return value;
   }
 }
