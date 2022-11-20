@@ -24,6 +24,7 @@ class Main {
         String serialNumber = input.nextLine();
         System.out.println("Enter the value in dollars (whole number):");
         Integer valueNum = input.nextInt();
+        input.nextLine();
 
         placeholder = new Inventory(itemName, serialNumber, valueNum);
         Storage.add(placeholder);
@@ -65,7 +66,7 @@ class Main {
       {
         for(int a = 0; a < Storage.size(); a++)
         {
-          System.out.println(Storage.get(a).getName() + ", " + Storage.get(a).getSerialNum() + ", " + Storage.get(a).getValue());    
+          System.out.println(Storage.get(a).getName() + "," + Storage.get(a).getSerialNum() + ", " + Storage.get(a).getValue());    
         }
       }
       else if(userInput == 5)
