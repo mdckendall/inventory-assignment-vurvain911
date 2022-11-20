@@ -45,14 +45,12 @@ class Main {
 
       if(userInput == 1)
       {
-        input.nextLine();
         System.out.println("Enter the name:");
         String itemName = input.nextLine();
         System.out.println("Enter the serial number:");
         String serialNumber = input.nextLine();
         System.out.println("Enter the value in dollars (whole number):");
         Integer valueNum = input.nextInt();
-        input.nextLine();
 
         placeholder = new Inventory(itemName, serialNumber, valueNum);
         Storage.add(placeholder);
@@ -60,7 +58,6 @@ class Main {
       else if(userInput == 2)
       {
         System.out.println("Enter the serial number of the item to delete:");
-        input.nextLine();
         String deletion = input.nextLine();
 
         for(int i = 0; i < Storage.size(); i++)
@@ -74,13 +71,11 @@ class Main {
       else if(userInput == 3)
       {
         System.out.println("Enter the serial number of the item to change:");
-        input.nextLine();
         String change = input.nextLine();
         System.out.println("Enter the new name:");
         String newName = input.nextLine();
         System.out.println("Enter the new value in dollars (whole number):");
         Integer newVal = input.nextInt();
-        input.nextLine();
         
         for(int j = 0; j < Storage.size(); j++)
         {
@@ -106,5 +101,6 @@ class Main {
         break;
       }
     } while (true);
+    input.close();
   }
 }
