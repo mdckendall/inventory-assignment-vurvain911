@@ -36,7 +36,7 @@ class Main {
 
     do{
       Inventory placeholder;
-      System.out.println("Press 1 to add an item.");
+      System.out.println("Press 1 to add an item.\n");
       System.out.println("Press 2 to delete an item.");
       System.out.println("Press 3 to update an item.");
       System.out.println("Press 4 to show all the items.");
@@ -45,8 +45,8 @@ class Main {
 
       if(userInput == 1)
       {
-        System.out.println("Enter the name:");
         input.nextLine();
+        System.out.println("Enter the name:");
         String itemName = input.nextLine();
         System.out.println("Enter the serial number:");
         String serialNumber = input.nextLine();
